@@ -1,0 +1,8 @@
+If the output of 'experiment_generator.py' was written to 'experiments.m'
+then run these commands in MATLAB to run the experiments.
+
+experiment_list = struct;
+run('experiments.m');
+experiment_list = experiment_list(2:end);
+run('pinnscript.m');
+exit;
